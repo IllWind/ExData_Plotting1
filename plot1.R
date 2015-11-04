@@ -20,8 +20,7 @@ dataDT <- fread("dataTable.txt")
 
 # Turn on the png device
 png(file="plot1.png",width=480,height=480,bg="white")
-# Create the histogram on the default graphics device
-#     Set the histogram color, the x axis label, and the title
+# Set the histogram color, the x axis label, and the title
 hist(dataDT$Global_active_power,col="red",xlab="Global Active Power (kilowatts)",main="Global Active Power")
 
 # Turn off the png device
