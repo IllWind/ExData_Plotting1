@@ -45,7 +45,7 @@ png(file="plot4.png", width=480, height=480, bg="white")
 
 # Set mfrow to display four plots on one page
 par(mfrow=c(2,2))
-# Generate the four plots
+# Make the four plots
 plot(datetime,dataDT$Global_active_power,type="n",ylab="Global Active Power",xlab="")
 lines(datetime,dataDT$Global_active_power)
 
