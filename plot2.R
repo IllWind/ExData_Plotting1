@@ -39,6 +39,7 @@ if( !("dataDT" %in% ls()) ) {
 #     way to look at the data.
 datetime<-strptime(paste(dataDT$Date,dataDT$Time),format="%d/%m/%Y %T")
 
+# Turn on the png device
 png(file="plot2.png", width=480, height=480, bg="white")
 # Make the plot
 plot(datetime,dataDT$Global_active_power,type="n",ylab="Global Active Power (kilowatts)",xlab="")
